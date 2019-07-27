@@ -1,0 +1,15 @@
+body{
+    /* font-family:  'Courier New', Courier, monospace; */
+    font-family:  'Cairo';
+    font-size: 20px
+    /* font-family: 'Amiri'; */
+}
+
+p{
+    font-family: Courier;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+/* تکست الاین کمک میکند تا متن خودش را خط به خط در وسط قرار دهد */

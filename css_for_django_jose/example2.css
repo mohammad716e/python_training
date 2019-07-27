@@ -1,0 +1,65 @@
+ul {
+    list-style-type: none;
+}
+
+div{
+    background-color: rgba(109, 0, 85, 0.521);
+}
+
+.cls1{
+    color: rgb(107, 3, 64);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cls2{
+    font-size: 34px;
+    color: chartreuse;
+}
+
+#pid{
+    color: green;
+    font-weight: bold;
+    text-decoration: line-through; 
+}
+
+/* 
+
+سلکتور همه 
+که آی دی ها را نمیتواند تغییر دهد اما کلاس را میتواند
+*/
+/* ------------------------------ */
+/* *{
+    color: aqua;
+    font-size: 30px;
+} */
+/* ------------------------------ */
+
+
+
+/* سلکتور همسایگی که آخری را سلکت میکند*/
+h3 + ul {
+    background-color: rgba(67, 194, 211, 0.699);
+    border: 4px dotted purple;
+    padding: 30px;
+}
+
+/* سلکتور درونی که آن چیز هایی که درون تگ مد نظر هستند را سلکت میکند */
+
+li a{ 
+    background-color: rgb(255, 230, 0);margin:10px;padding: 3px}
+
+
+/* سلکتور صفتی مثل عین جیسون میماند */
+/* تمام لینک هایی که به گوگا اشاره دارند و در لیست آیتم اند */
+/* دو نوع دارد که هر دو درست کار میکنند */
+/* 1 */
+ a[href="http://www.google.com"]{
+    color: blueviolet;
+    font-size: 20px;
+}
+/* 2 */
+/* li a[href="http://www.google.com"]{
+    color: blueviolet;
+    font-size: 20px;
+} */

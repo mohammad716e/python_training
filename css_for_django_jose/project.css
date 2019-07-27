@@ -1,0 +1,39 @@
+
+body{
+    font-family: Cairo;
+
+}
+pre{
+    font-family: Cairo;
+    text-align: center;
+}
+a{
+    background-color: lightblue;
+    padding: 2.5px;
+    
+}
+table{
+    margin: auto;
+    /* background-color:red; */
+    /* برای دیباگ */
+}
+td{
+    width: 100px;
+    height: 200px;
+    border: 3px solid white;
+}
+#one{
+    background-color:#5BC0EB;
+}
+#two{
+    background-color: #FDE74C;
+}
+#thr{
+    background-color: #9BC53D;
+}
+#fou{
+    background-color: #E55934;
+}
+#fiv{
+    background-color: #FA7921;
+}
