@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+}
+
+h1{
+    color : blue; 
+}
+
+li{
+    color: rgb(255, 0, 200);
+}
+
+h3{
+    background-color: rgba(133, 0, 104, 0.452)
+}
+/* 
+رنگ ها سه نوع 
+rgb 
+rgba 
+hex code
+دارند */
