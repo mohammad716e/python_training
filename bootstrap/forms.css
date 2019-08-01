@@ -1,0 +1,11 @@
+#form{
+    background-color:lightblue;padding-top:20px;padding-bottom: 20px;
+}
+
+.dropdown-toggle, .dropdown-menu { border: 1px solid grey }
+.btn-group img { margin-right: 10px }
+.dropdown-toggle { margin: 30px 0px 20px 0px;
+text-align: start }
+.dropdown-toggle .glyphicon { margin-left: 20px; margin-right: 40px }
+.dropdown-menu>li>a:hover { background: #f1f9fd } /* $search-blue */
+.dropdown-header { background: #ccc; font-size: 14px; font-weight: 700; padding-top: 5px; padding-bottom: 5px; margin-top: 10px; margin-bottom: 5px }

@@ -1,0 +1,31 @@
+#brand-text{
+    font-size: 2em
+}
+#holder{
+    margin: 70 0
+}
+hr{
+    background-color: #fff;
+    color: #fff;
+}
+.holder-top{
+    margin: 70px
+}
+form{
+    /* text-align: end */
+    
+}
+#vv{
+      
+    /* text-align: end; */
+     
+    background-color:lightblue;
+    padding:2em
+}
+.fom-check{
+    direction: ltr;
+    text-align: start
+}
+img {
+    margin: 3px
+}

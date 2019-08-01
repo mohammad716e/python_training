@@ -1,0 +1,11 @@
+p  {
+    direction: rtl;
+    text-align: start;
+}
+h1 {
+    direction: rtl;
+    text-align: start;
+}
+.row{
+    text-align: center;
+}

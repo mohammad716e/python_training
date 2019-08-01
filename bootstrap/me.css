@@ -1,0 +1,7 @@
+.jumbotron{
+    direction: rtl;
+    background-color: lightblue;
+}
+p{
+    direction: rtl;
+}
