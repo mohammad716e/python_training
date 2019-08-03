@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>آبجکت ها در جاوا اسکریپت</title>
+</head>
+<body>
+    <p></p>
+    <div class="container">
+        <h1>یاد آوری کوچک آبجکت در جاوا اسکریپت</h1>
+        <p class="col-lg-4 col-md-6 text-right" style="direction: rtl">
+            برای شماردن دو آرایه همزمان و دو آبجکت همزمان در جاوا اسکریپت
+             این برگه را بخوانید وکنسول را باز کنید
+             <strong>اگر در آبجکت متدی نهفته باشد </strong><br>
+             آن را با دستور (object_name) <span dir="rtl"> console.dir</span> فقط میتوان دید<br>
+             (راه حل به هم ریختگی پرانتز ها  در سورس html ببینید) <br>
+            حال اگر متد درون آبجکت را بدون پرانتز صدا کنیم فقط خود dirآن فانکشن را میدهد
+            درصورتی که با پرانتز صدا کنیم آن تابع را call میکند
+            و توابع درون آبجکت با this به متغیرهای درون آن آبجکت دسترسی پیدا میکنند
+        </p>
+    </div>
+    <p></p>
+<script src="objects.js"></script>
+</body>
+</html>
