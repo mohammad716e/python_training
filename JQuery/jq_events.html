@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- شروع هدر -->
+
+<head>
+    <!-- دیفالت های خود امت emmet -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  لینک به بوت استرپ-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- تایتل صفحه -->
+    
+    <title>تمرین جی کوعری</title>
+    <!-- استایل حود ساخته -->
+    
+    <style>
+        .turnblue{
+            background-color:blue;
+            color: white;
+        }
+        .turnred{
+            background-color: red;
+            color: white;
+        }
+        .w{
+            background-color: lightblue;
+        }
+        .en{
+
+        }
+        p{
+            white-space: pre;
+        }
+        pre{
+            background-color: lightblue;
+        }
+    </style>
+
+    <!-- اسکریپت جی کوعری CDN -->
+
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>     -->
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <!-- اسکریپت گوگل پرتیفای برای هایلایت کردن کد -->
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+
+    <!-- اسکریپت های بوت شواچ برای بوت استرپ های شخصی سازی شده -->
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css" integrity="sha384-w+8Gqjk9Cuo6XH9HKHG5t5I1VR4YBNdPt/29vwgfZR485eoEJZ8rJRbm3TR32P6k" crossorigin="anonymous"> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-FBPbZPVh+7ks5JJ70RJmIaqyGnvMbeJ5JQfEbW0Ac6ErfvEg9yG56JQJuMNptWsH" crossorigin="anonymous"> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-mtS696VnV9qeIoC8w/PrPoRzJ5gwydRVn0oQ9b+RJOPxE1Z1jXuuJcyeNxvNZhdx" crossorigin="anonymous"> -->
+</head>
+
+
+
+<body >
+    <p></p>
+<div class="container text-right" dir="rtl">
+    <p></p>
+    <!-- نحوهی نشان دادن کد در قالب خوب -->
+        <!-- <p >
+            <pre class=" text-left prettyprint" dir="ltr" style="border:0px"><code >
+                function ready ( fn ) { 
+                    if ( document.readyState != 'loading' ){ 
+                        fn ( ) 
+                    } else { 
+                        document.addEventListener( 'DOMContentLOaded' , fn s) 
+                   } 
+                }
+
+                print("hello")
+                def hello():
+            </code></pre>
+         
+
+            </p> -->
+
+            <h1>تمرین جی کوعری <h6>
+                ( کلیک و  یا دابل کلیک کنید)</h6>
+            </h1>
+    <p>
+        در این تمرین که از همان فایل مجدد استفاده کردیم میخواهیم
+         انیمیشن ها و ایونت ها ولیستنر ها رو اضاف کنیم  از جمله کلیک و
+         حرکت موس
+         
+         Function() این اولین فانکشنی است که به کلیک پاس میدهیم ولی همیشه فانکشن های پاس شده به به کلیک یا هر نوع ایونتی 
+          دارای یک متغییر دیفالت هستند که مثلا  ایونت مینامیم اش
+          که برای خود یک آبجکت تمام عیار هستند که در کسول میتوان دید
+        
+          برای هر ایونتی میتوان از this استفاده کرد
+          و متد دیگر برای ایونت و لیسنر ها on است
+        </p>
+          <hr style="margin: 0 ">
+<p >
+          و برای خواندن مستندات  jquery باید در بخش api سایت مطالعه کرد
+        <a href="https://api.jquery.com/"> لینک مستندات جی کوعری</a>
+
+    </p>
+
+    <ul>
+        <li>آیتم اول 
+            
+            <ul><li>لیست نست شده یا نیم آیتم اول</li></ul>
+        </li>
+        <li> ایتم دوم
+                <ul><li>لیست نست شده یا نیم دوم</li></ul>
+
+        </li>
+        <li> ایتم سوم
+                <ul><li id="special">لیست نست شده یا نیم آیتم سوم</li></ul>
+
+        </li>
+    </ul>
+    <h3> در اینجا برخی از اینتپوت ها آورده شده است</h3>
+    <h5> که بعدا با جی کوعری با آن ها تعامل میکنیم</h5>
+    <input type="text" name="" id="" value="اسم خود را وارد کنید">
+    <input type="submit" name="" id="" value="ارسال">
+    <p>
+        با هر دکمه در اینپوت رنگ h3 تغییر میکند بین آبی و سفید
+         اگر اینتر بزنید فقط قرمز میشود برای enter key -> event.which = 13
+         اگر بر روی ارسال بزنید همه چیز بای بای میشود
+         <em>نکته مهم</em>
+    در جی کوعری اسلیم شده انیمیشن وجود نداردو ارور میدهد که 
+    fadeOut is not a function
+    </p>
+</div>
+<script src="jq_events.js" ></script>
+</body>
+</html>

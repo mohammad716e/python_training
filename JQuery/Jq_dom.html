@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="jq_dom.css">
+    <title>شروع جِی کوعری </title>
+</head>
+<body>
+    <p class="w"></p>
+    <div class="container text-right">
+        <p class="w"></p>
+        <h1>شروع جـِی کوعری</h1>
+        <p class="w"></p>
+        <div class=" row" dir="rtl">
+            <div class="col-lg-4 col-md-6"  >
+                <p>
+
+                جی کوعری یک کتابخانه ی جاوا اسکریپت است که تفاوت های آن را 
+                با vanila java script  مینویسیم چند مورد
+                مثلا  <br>
+                </p>
+                <hr>
+                <p class="text-left" dir="ltr">
+
+                    //  JQuery <br>
+                    $(el).css('border-width','20px') <br>
+                    <br>            
+                    // Vanilla <br>
+                    el.style.borderWidth = '20px'
+
+                </p>
+                <hr>
+                <p class="text-left" dir="ltr">
+                    // JQuery <br>
+                    $(document).ready( function ( ) { // code }) <br>
+                    <br>
+                    // Vanilla
+                    <br>
+                    
+                    function ready ( fn ) { <br>
+                        if ( document.readyState != 'loading' ){ <br>
+                            fn ( ) <br>
+                        } else { <br>
+                            document.addEventListener( 'DOMContentLOaded' , fn s) <br>
+                        } <br>
+                    }
+                
+                    
+            </p>
+
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <p class="text-left" dir="ltr">
+                // JQuery  <br>
+                var divs = $('div') <br>
+                <br>
+                // Vanilla <br>
+                var divs = document.querySelectorAll('div') <br>
+                </p>
+                
+                
+                    <ul>
+                        <li> ایتم اول</li>
+                        <li> ایتم دوم</li>
+                        <li> ایتم سوم</li>
+                        <li> ایتم چهارم</li>
+                    </ul>
+                <input type="text" name="" id="" value="اسم خود را وارد کنید">
+                <input type="submit" name="" id="" value="ارسال ">
+
+            </div>
+            <p class="col-lg-4 col-md-6 btn disabled"  > سلام ما درست شدیم در بوت استرپ های بد روزگار آخیش با یک تکه کد dir ="RTL" در div class="row"
+                جالب تر اینکه ترکیب انگلیسی و فارسی در هم هم درست شد
+            بالاخره حالا راحت میشه گفت که I love you bootstrap honey</p>
+        </div>
+    
+        <div class=" row" dir="rtl">
+                <!-- <p class="col-lg-4 col-md-6"  >
+
+                </p> -->
+            
+        </div>
+    </div>
+    <!-- اسکریپت برای جی کوعری CDN  slim minified versio -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+</body>
+</html>
