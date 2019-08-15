@@ -28,7 +28,7 @@ function changeColor(rowIndex,colIndex,color) { // SELECT AND CHANGE CSS
 // -------------------------
 //  اینم فقط یک تابع هست که با داشتن شماره ی سطر وسطون به ما اعلام میکنه که رنگ اون خونه چیه فقط یک سی اس اس رو 
 // به ما میگه و مثل بالایی هست
-function reportColor(rowIndex,colIndex,color) { // SELECT AND CHANGE CSS 
+function reportColor(rowIndex,colIndex) { // SELECT AND CHANGE CSS 
     return table.eq(rowIndex).eq(colIndex).find('button').css('background-color')
 }
 // پیدا کردن این که نزدیک ترین خونه برای پر کردن توی هر سطون کدومه
@@ -41,12 +41,12 @@ function reportColor(rowIndex,colIndex,color) { // SELECT AND CHANGE CSS
 function checkBottom(colIndex){ // RETURN ROW IDX
     // حالا باید از پایین ترین خونه شروع کنیم به ریپورت گرفتن از رنگ ها برای و
     // اگر دیدیم که اکستری بود برگردونیمش
-    var colorReports = colorReport(5,colIndex)
+    var colorReports = reportColor(5,colIndex)
     // البته میتوانستیم یک استرینگ خالی برای این کار هم بگذاریم بجای صدا کردن فانکشن 
     // البته تا زمانیکه هست هم شاید یک بار کمتر شدا کنه فانکشن ریپورت رو
     // حالا حلقه
     for (var row = 5 ; row > -1 ; row-- ){
-        colorReports = colorReport(row,colIndex)
+        colorReports = reportColor(row,colIndex)
         if (colorReports === 'rgb(128, 128, 128)') {
             return row
         }

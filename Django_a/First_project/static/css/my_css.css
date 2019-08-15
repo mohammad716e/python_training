@@ -1,0 +1,11 @@
+h1{
+    background-color: lightblue;
+    padding: 15px;
+}
+small{
+    font-size: 17px;
+}
+img{
+    border: 3px solid lightblue;
+    border-radius: 6%;
+}
