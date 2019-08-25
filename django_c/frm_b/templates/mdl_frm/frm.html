@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>صفحه ی فرم</title>
+    <style>
+        /* li */
+    .vv{
+        /* list-style-type: none; */
+        margin: 12px
+    }
+    input{
+        margin: 0 0 0 18px
+    }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <p></p>
+    <h1 class="text-right" >صفحه ی فرم ها</h1>
+
+    <div style="margin: 7em"></div>
+
+            <div class="container  text-right">
+
+                <form action="" method="POST" class="text-right">
+
+                    {% csrf_token %}
+                    <div class="vv">
+                    نام خود را وارد کنید
+                    {{ ins_form.name }} </div> <div class="vv">
+                    ایمیل خود را وارد کنید  
+                    {{ ins_form.email }} </div> <div class="vv">
+                    آی دی خود را وارد کنید  
+                    {{ ins_form.s_id }}  </div> <div class="vv">
+                <input type="submit" value="ارسال" class="btn  btn-primary" name="" id="" >
+            </div>         </form>
+        
+        
+            </div> 
+        <p></p>
+    </div>
+</body>
+</html>

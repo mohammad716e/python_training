@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'basicapp/base.html' %}
+
+    {% block body_block %}
+
+        <h1> سلام به صفحه ی اصلی سایت خوش آمدید</h1>
+        <p>فیلتر ها و توضیح آنها </p>
+        <dir class="col-lg-6 text-left" style="border: 1px solid darkblue;border-radius:0.5em;padding:
+        1em;background-color:lightblue;">
+        <h2 dir="ltr">{{ ins_text|cut:'man' }} | upper </h2> 
+        <h2 dir="ltr">{{ ins_num|add:3562 }} | add "3562" </h2></dir>
+    {% endblock %}

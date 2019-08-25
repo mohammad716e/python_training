@@ -10,6 +10,29 @@
 </head>
 <body dir="rtl">
     <h1> به وبسایت دوم دوره ی جنگو خوش آمدید</h1>
-    <h2> {{ msg }}</h2>
+    <h2> 
+        نمایش تمامی تاریخ های دسترسی
+    </h2>
+
+    {% if insert_table %}
+
+    <table class="tbl" border="12" >
+        <thead>
+            <th>نام صفحه</th><th> تاریخ دسترسی</th>
+        </thead>
+        
+        <tbody>
+            {% for rec in insert_table %}
+
+            <tr>
+                <td>{{ rec.name }}</td><td>{{ rec.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% else %}
+        <h2>مطبی برای نمایش وجود ندارد</h2>
+    {% endif %}
 </body>
 </html>

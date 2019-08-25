@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% if ins_title %}
+        <title> {{ ins_title }}</title>
+    {% else %}
+        <title>صفحه ی اصلی </title>
+    {% endif %}
+    </head>
+  <body>
+
+    <!-- our theme here -->
+
+
+    <!-- "navbar navbar-dark bg-primary" -->
+
+    <nav  class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: #002b49;">
+        <a class="navbar-brand" href="#">منو ی سایت </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+           
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">خانه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'basicapp:other' %}">دیگر</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'basicapp:relative' %}">وابسته</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'admin:index' %}">مدیریت</a>
+              </li>
+                    
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    
+        <div style="margin: 5.7em 0 ;"></div>
+        <!--  برای تنظیم افتادن نوار بر روی متون < p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto non cumque laboriosam voluptates optio libero reprehenderit. Quidem maxime molestiae deserunt debitis tempora sapiente porro modi aut. Quia, dolor fuga.</p> -->
+        <!-- برای تنطیم فیکس بدن نوار روی صفحه <div style="margin: 1000px 0;"></div>  for navbar test  -->
+        <div class="container text-right" dir="rtl">
+    {% block body_block %}
+    <!-- هر چیزی که در اینجا باشد به از بالایی ها به ارث برده است -->
+    {% endblock %}
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -91,3 +91,38 @@ and now THE ADMIN PANNEL
     داکیومنت خود فیکر را میشه دید تا نحوه ی استفاده شو دید
     
 """
+
+# =================================================================
+"""
+MODELS TEMPLATES VIEWS
+    چطوری مشه که همه ی چیز های دیتا بیس رو نشون داد
+    با وصل کردن مدل ها به ویو ها و وصل کردن همشون به تمپلیت ها
+    1 = اول مدل ها رو در ویو ها ایمپورت میکنیم
+        from folan_app.models import yeki,dota,seta
+    2= سپس همه ی آبجکت ها رو لیست یا توپل یا چیز باحال میکنیم
+        LIZT = sevomi.objects.order_by('date'# یا هر پارامتری شاید)
+        my_context = { 'inset_list' : LIZT }
+    3= بعدن در آن تمپلیت حلقه مینویسیم
+        {% if insert_list %}
+        <table>
+            <thead>
+                <th>yek</th><th>du</th>
+            </thead>
+           <tbody>
+            {% for acc in inser_list %}
+           <tr>
+                <td>
+                    {{ insert_list.date }}
+                </td>
+                <td>
+                    {{ insert_list.name }}
+                </td>
+           </tr>
+            {% endfor %}
+           </tbody>
+           {% else %}
+                <p>NO THING TO SHOW</P>
+        </table>
+        {% endif %}
+
+"""
