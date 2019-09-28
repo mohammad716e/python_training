@@ -44,37 +44,37 @@
   
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item btn   ">
           <a class="nav-link" href="{% url 'index' %}">خانه 
             <!-- <span class="sr-only">(current)</span> -->
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item btn  ">
           <a class="nav-link" href="{% url 'basic_opr_app:register' %}">ثبت نام </a>
         </li>
-        <!-- <li class="nav-item">
+        <!-- <li class="nav-item btn  ">
           <a class="nav-link" href="{% url 'basic_opr_app:uzr_login' %}">ورود به حساب </a>
         </li> -->
 
         {% if user.is_authenticated %}
 
-        <li class="nav-item">
+        <li class="nav-item btn  ">
           <a class="nav-link" href="{% url 'logout' %}">خروج از حساب </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item btn  ">
           <a class="nav-link" href="{% url 'special' %}">ویژه</a>
         </li>
-        <!-- <li class="nav-item">
+        <!-- <li class="nav-item btn  ">
           <img src="" alt="" >
         </li> -->
 
         {% else %}
-        <li class="nav-item">
+        <li class="nav-item btn  ">
           <a class="nav-link" href="{% url 'basic_opr_app:uzr_login' %}">ورود به حساب </a>
         </li>
         {% endif %}
         <!-- Dropdown -->
-        <!-- <li class="nav-item dropdown">
+        <!-- <li class="nav-item btn   dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">Dropdown</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">

@@ -1,0 +1,24 @@
+{% extends 'basic/basic_base.html' %}
+
+{% block body_block %}
+
+<h1> سلام در اینجا لیستی از مدارس را میبینید</h1>
+
+{% if not form.instace.pk %}
+
+create school
+
+{% else %}
+
+update school
+
+{% endif %}
+ 
+<form action="" method="post">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" name="" id="" value="ارسال">
+</form>
+
+{% endblock %}

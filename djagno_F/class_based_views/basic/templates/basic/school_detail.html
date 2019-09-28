@@ -1,0 +1,30 @@
+{% extends 'basic/basic_base.html' %}
+
+{% block body_block %}
+
+    <h1>سلام خیلی خیلی خوش آمدید</h1>
+    <h3>  توضیحات مدرسه <strong > {{ school_detail.name }}</strong></h3>
+<!-- 
+    <h3>{{ school_detail.name }}</h3> -->
+    <p></p>
+    <div style="border: 1px solid lightblue">     </div>
+<p></p>
+    <h3>{{ school_detail.principal }} : نام مدیر</h3>
+    <h3>{{ school_detail.location }} : مکان مدرسه</h3>
+    <div style="margin: 1.7em"></div>
+    <h3>لیست دانش آموزان</h3>
+    <p></p>
+   <!-- { % for student in school_detail.students % } غلط -->
+   <!-- {% for student in school_detail.students.all %} 
+    <div style="border: 1px solid lightblue">     </div>
+    <h4><li>{{ student.name }}</li></h4>
+    <p></p>
+    {% endfor %} -->
+    <a href="{{ school.id }}">
+    <button type="button" class="btn btn-outline-info btn-lg"> مشاهده ی لیست دانش آموزان</button></a>
+<p></p>
+    <div style="border: 1px solid lightblue">     </div>
+    <p></p>
+    <a href="{% url 'basic:list' %}">
+    <button type="button" class="btn btn-outline-info btn-lg">بازگشت به لیست</button></a>
+{% endblock %}
